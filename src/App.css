@@ -1,38 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Luckiest+Guy&family=Pacifico&display=swap');
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+  font-size: xx-large;
+  color: rgb(255, 246, 161);
+  padding: 20px;
+  text-shadow: 5px 4px black;
+  background-color: #4357b9;
+  display: block;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h3{
+  color: rgb(241, 230, 126);
+  text-shadow: 2px 2px black;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Pacifico', cursive;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+#contain1{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between !important;
+  flex-wrap: wrap;
+  padding-top: 50px;
+
+}
+
+#contain2{
+  display: flex;
+  justify-content: space-between !important;
+  /* flex-wrap: wrap; */
+  /* padding-top: 50px; */
+
+}
+
+
+#card{
+  width: 12.8rem;
+  height: 12.8rem;
+  background-color:'#E6E4EE';
+  margin-bottom: 25px;
+  transition: transform .2s;
+  border: solid white;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+#card:hover {
+  -ms-transform: scale(1.05); 
+  -webkit-transform: scale(1.05); 
+  transform: scale(1.05); 
+}
+
+#selected{
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.cardimg{
+  height: 200px;
+  width: 200px;
+  object-fit:cover !important;
+}
+
+#raw-img{
+  border: solid white;
+  margin-bottom: 25px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+#result{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: solid white;
+}
+
+footer{
+  position: relative;
+  bottom: -53px !important;
+  background-color: #463ec5;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
